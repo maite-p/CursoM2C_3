@@ -1,0 +1,11 @@
+object Summatory extends App{
+ def sumatory (n:Int):Int = {
+   require(n>0)
+   def aux (ac1 :Int,ac2:Int):Int = {
+	if (ac1==0) ac2 
+	else aux (ac1-1) ac2 
+	}
+ return aux n 0
+ }
+ }
+	
